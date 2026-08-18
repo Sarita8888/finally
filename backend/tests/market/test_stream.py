@@ -43,7 +43,7 @@ class TestGenerateEvents:
 
         data_events = [e for e in events if e.startswith("data: ")]
         assert len(data_events) == 1
-        payload = json.loads(data_events[0][len("data: "):].strip())
+        payload = json.loads(data_events[0][len("data: ") :].strip())
         assert "AAPL" in payload
         assert payload["AAPL"]["price"] == 190.50
 

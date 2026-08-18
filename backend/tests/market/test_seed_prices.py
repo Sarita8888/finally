@@ -16,8 +16,16 @@ class TestSeedPrices:
     def test_default_watchlist_tickers_present(self):
         """The 10 default watchlist tickers from PLAN.md §7 must all be seeded."""
         expected = {
-            "AAPL", "GOOGL", "MSFT", "AMZN", "TSLA",
-            "NVDA", "META", "JPM", "V", "NFLX",
+            "AAPL",
+            "GOOGL",
+            "MSFT",
+            "AMZN",
+            "TSLA",
+            "NVDA",
+            "META",
+            "JPM",
+            "V",
+            "NFLX",
         }
         assert expected == set(SEED_PRICES.keys())
 
